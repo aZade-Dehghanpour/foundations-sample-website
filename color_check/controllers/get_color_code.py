@@ -13,7 +13,7 @@ def get_color_code(color_name):
     # Open the file at data/css-color-names.json, and return the hex code
     # The file can be considered as JSON format, or as a Python dictionary.
 
-    with open ("data/css-color-names.json" , "r") as read_json:
+    with open ("color_check/data/css-color-names.json" , "r") as read_json:
         deserialized_json = json.load(read_json)
 
     if color_name in deserialized_json:
