@@ -1,11 +1,17 @@
 from flask import Flask
-from flask import render_template
+from flask import render_template , request
 from color_check.controllers.get_color_code import get_color_code
+from color_check.controllers.record_log import record_log
+from datetime import datetime
+
+
 app = Flask(__name__)
+
 
 
 @app.route('/')
 def index():
+    
     return render_template('index.html', page_title="Color Check")
 
 
@@ -20,12 +26,21 @@ def show_color():
     # - render a new page which shows a square of that color and its name
     # - if the color doesn't exist, give the user a useful error message.
     # - create a log.txt file which records (logs) the user requests. 
-
-    user_submitted_string = 'blue'
+    log_timestamp = datetime.now()
+    user_submitted_string = request.form.get("color")
     color_hex_code = get_color_code(user_submitted_string)
+    
 
-    return render_template('color.html', page_title="Show Color",
-                           color_hex_code=color_hex_code)
+    if not color_hex_code:
+        inquiery = "Invalid Input"
+        record_log(user_submitted_string, log_timestamp, inquiery)
+        return render_template('invalid_color.html', message="There's no color as such", log_timestamp = log_timestamp)
+    
+    else:
+        inquiery = "Valid Input"
+        record_log(user_submitted_string, log_timestamp, inquiery)
+        return render_template('color.html', page_title="Show Color",
+                            color_hex_code=color_hex_code,log_timestamp = log_timestamp, color = user_submitted_string)
 
 
 if __name__ == "__main__":

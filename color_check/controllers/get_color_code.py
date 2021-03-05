@@ -6,11 +6,25 @@
 # for example by logging the request and error, and the user,
 # letting them know that their color doesn't exist.
 
+import json
+
 def get_color_code(color_name):
     # this is where you should add your logic to check the color.
     # Open the file at data/css-color-names.json, and return the hex code
     # The file can be considered as JSON format, or as a Python dictionary.
 
-    hex_code = '#0000ff'
+    with open ("data/css-color-names.json" , "r") as read_json:
+        deserialized_json = json.load(read_json)
 
-    return hex_code
+    # hex_code = '#0000ff'
+
+    # print("hi")
+
+    #return hex_code
+    if color_name in deserialized_json:
+        return deserialized_json[color_name]
+    else:
+        return None
+
+
+
