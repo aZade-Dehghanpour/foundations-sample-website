@@ -16,11 +16,6 @@ def get_color_code(color_name):
     with open ("data/css-color-names.json" , "r") as read_json:
         deserialized_json = json.load(read_json)
 
-    # hex_code = '#0000ff'
-
-    # print("hi")
-
-    #return hex_code
     if color_name in deserialized_json:
         return deserialized_json[color_name]
     else:
