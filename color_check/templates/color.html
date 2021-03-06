@@ -2,11 +2,12 @@
 
     
 {% block content %}
-    <div id = "color_box" style="background-color: red "></div>
     <p> 
         You chose 
-        <span style="color: red">{{color}}</span>
+        <span style= "color:{{color_hex_code}}"> {{color}}</span>
         . Hex code is {{color_hex_code}} 
     </p>
+    <div id = "color_box" style= "background-color: {{color_hex_code}}"></div>
+
 
 {% endblock %}

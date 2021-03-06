@@ -1,25 +1,8 @@
-2021-03-04 20:07:59.914267 User entered red.   Valid Input
-2021-03-04 20:08:06.820819 User entered black.   Valid Input
-2021-03-04 20:08:13.874157 User entered gray.   Valid Input
-2021-03-05 14:43:19.906802 User entered red.   Valid Input
-2021-03-05 14:44:38.975200 User entered red.   Valid Input
-2021-03-05 14:45:22.824139 User entered red.   Valid Input
-2021-03-05 14:46:18.368711 User entered red.   Valid Input
-2021-03-05 14:46:58.761228 User entered red.   Valid Input
-2021-03-05 14:47:52.203925 User entered red.   Valid Input
-2021-03-05 14:49:36.308733 User entered red.   Valid Input
-2021-03-05 14:50:41.154256 User entered red.   Valid Input
-2021-03-05 15:02:30.183584 User entered red.   Valid Input
-2021-03-05 15:04:58.762054 User entered red.   Valid Input
-2021-03-05 15:05:26.453516 User entered red.   Valid Input
-2021-03-05 15:06:49.850094 User entered red.   Valid Input
-2021-03-05 16:11:41.557819 User entered red.   Valid Input
-2021-03-05 16:24:23.629146 User entered red.   Valid Input
-2021-03-05 16:25:02.341576 User entered red.   Valid Input
-2021-03-05 16:27:21.448343 User entered red.   Valid Input
-2021-03-05 16:32:55.762117 User entered red.   Valid Input
-2021-03-05 16:37:09.123181 User entered red.   Valid Input
-2021-03-05 16:39:47.902508 User entered red.   Valid Input
-2021-03-05 16:41:35.850190 User entered blue.   Valid Input
-2021-03-05 16:44:01.604202 User entered red.   Valid Input
-2021-03-05 16:44:41.194738 User entered blue.   Valid Input
+2021-03-06 14:06:29,392 - DEBUG - User entered blue ... Valid Input
+
+2021-03-06 14:07:16,975 - DEBUG - User entered red ... Valid Input
+
+2021-03-06 14:07:24,365 - DEBUG - User entered black ... Valid Input
+
+2021-03-06 14:07:31,244 - DEBUG - User entered gjkhgj ... Invalid Input
+
