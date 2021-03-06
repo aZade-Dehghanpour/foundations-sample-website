@@ -50,7 +50,7 @@ jobs:
     - name: Deploy to Google App Engine
       uses: google-github-actions/deploy-appengine@main
       with:
-        DEFAULT_BRANCH: main
+        
         credentials: ${{ secrets.MP_KEY }}
     - name: Cleanup Old Versions on Google App Engine 
       run: gcloud app versions delete --quiet `gcloud app versions list --format="value(id)[terminator=' ']" --filter="traffic_split=0"`

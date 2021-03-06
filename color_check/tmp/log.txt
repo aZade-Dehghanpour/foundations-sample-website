@@ -1,6 +1,0 @@
-2021-03-06 14:27:20,118 - DEBUG - User entered gjkhgj ... Invalid Input
-
-2021-03-06 14:27:26,327 - DEBUG - User entered red ... Valid Input
-
-2021-03-06 14:27:33,787 - DEBUG - User entered blue ... Valid Input
-
