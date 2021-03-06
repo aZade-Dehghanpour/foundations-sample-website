@@ -8,7 +8,7 @@ import logging
 
 app = Flask(__name__)
 
-logging.basicConfig(filename = "color_check/data/log.txt", filemode = "w", level= logging.DEBUG, format= "%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(filename = "color_check/tmp/log.txt", filemode = "w", level= logging.DEBUG, format= "%(asctime)s - %(levelname)s - %(message)s")
 
 @app.route('/')
 def index():
